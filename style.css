@@ -1,0 +1,910 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.all-content{
+    background: #FF597B;
+}
+
+/* Navbar */
+#navbar{
+    background-color: #B73E3E;
+    padding-left: 50px ;
+    font-weight: bold;
+}
+#logo{
+    font-size: 23px;
+    color: #FFCACA;
+}
+
+#logo img{
+    margin-bottom: 15px;
+}
+
+.navbar-nav{
+    margin-left: 10px;
+}
+
+.nav-link{
+    color: #FFCACA;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0,5s;
+}
+
+.nav-link:hover{
+    background-color: #F96666;
+    color: white;
+    border-radius: 10px;
+}
+
+.icons{
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons img{
+    margin-left: 10px;
+    transition: 0,5s ease;
+    cursor: pointer;
+}
+
+
+.icons img:hover{
+    transform: translateY(-5px);
+}
+
+@media screen and(max-width: 330px){
+    #logo{
+        font-size: 15px;
+    }
+}
+
+
+/* Navbar End */
+
+/* Home section */
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./Gambar/coklat.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    
+}
+
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+.home .img{
+    flex: 1 1 400px;
+}
+
+.home .img img{
+    width: 100%;
+}
+
+.content h3{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.content h2{
+    font-size: 50px;
+    color: white ;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+
+.changescontent::after{
+    content: '  ';
+    color:#F96666;
+    animation: changetext 10s infinite linear;
+    
+}
+
+@keyframes changetext{
+    0%{content:" Birthday Cake";}
+    20%{content:" Party Cake";}
+    40%{content:" Choco Cake";}
+    60%{content:" Slice Cake";}
+    100%{content:" Cup Cake";}
+}
+
+.content p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color:#B73E3E;
+    color: white;
+}
+
+@media screen and (max-width:800px){
+    .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:860px){
+    .home{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:560px){
+    .home{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:330px){
+    .content h2{
+        font-size: 30px;
+    }
+    .content h3{
+        font-size: 30px;
+    }
+}
+/* Home section */
+
+/* Top cards */
+.container h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #6B011F;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 50px;
+}
+
+#box{
+    margin-top: 50px;
+}
+
+#box .card{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#box .card:hover{
+    transform: translateY(-20px);
+}
+/* Top cards End*/
+
+/* Banner */
+.banner{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/Gambar/coklatlumer2.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 50px;
+}
+
+.banner .img{
+    flex: 1 1 400px;
+}
+
+.banner.img img{
+    width: 100%;
+}
+
+.banner .content1{
+    flex: 1 1 400px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+.banner .content1 h3{
+    color:#F96666;
+    font-weight: bold;
+}
+
+.banner .content1 h2{
+    font-size: 50px;
+    color: #F96666;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.banner .content1 p{
+    color: #F96666;
+}
+
+#btnorder button{
+    width: 150px;
+    height: 35px;
+    letter-spacing: 5px;
+    background-color: #F96666;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+    .banner .content1 h3{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:860px){
+    .banner{
+        height: 150vh;
+    }
+}
+
+/* Banner End */
+
+/* Produk cards */
+#produk-card h1{
+    text-align: center;
+    font-weight:bold ;
+    margin-top: 50px;
+    color: #6B011F;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #6B011F;
+}
+
+#produk-card .card{
+    background-color: #B73E3E;
+    box-shadow: 0 0 3px black;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;    
+}
+
+#produk-card .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+
+.overlay i .img{
+    background-color:#6B011F ;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+
+#produk-card h3{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.star .checker{
+    color: gold;
+}
+
+#produk-card p{
+    color: #6B011F;
+    font-weight: bold;
+}
+
+#produk-card h6{
+    font-size: 20px;
+    color: #6B011F;
+    font-weight: bold;
+}
+
+#produk-card h6 span button{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 3px;
+    border: 2px solid #6B011F;
+    border-radius: 8px;
+    float: right;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#produk-card h6 span button:hover{
+    background-color: #6B011F;
+    color: white;
+}
+
+/* Produk cards End*/
+
+
+/* Gallery */
+#gallery{
+    margin-top: 80px;
+}
+
+#gallery h1{
+    text-align: center;
+    font-weight:bold ;
+    margin-top: 50px;
+    color: #6B011F;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #6B011F;
+}
+
+#gallery .card{
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+
+#gallery .overlay{
+    opacity: 0;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#gallery .card:hover .overlay{
+    opacity: 5;
+    margin-top: 50%;
+    transition: 1s ease;
+}
+/* Gallery End*/
+
+
+
+/* About */
+#about{
+    margin-top: 50px;
+}
+
+#about h1{
+    text-align: center;
+    font-weight:bold ;
+    margin-top: 50px;
+    color: #6B011F;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #6B011F;
+}
+
+#about .card{
+    background-color: #6B011F;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 50px;
+}
+
+#about p{
+    color: #6B011F;
+    text-shadow: 0px 0px 1px black;
+    font-weight: bolder;
+    margin-top: 100px
+    
+}
+
+#bt button{
+    width: 200px;
+    height: 35px;
+    letter-spacing: 5px;
+    background-color: #6B011F;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    #aboutp{
+        font-size: 10px ;
+    }
+}
+
+@media screen and (max-width: 760px){
+    #aboutp{
+        font-size: 20px ;
+    }
+}
+
+
+/* About End */
+
+
+
+/* Contact */
+#contact{
+    margin-top: 100px;
+}
+
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #6B011F;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #6B011F;
+}
+
+#contact input{
+    background-color: #6B011F;
+    color: white;
+}
+
+#contact input::placeholder{
+    color: white;
+}
+
+#contact textarea{
+    background-color: #6B011F;
+}
+
+#contact textarea::placeholder{
+    color: white;
+}
+
+#messagebtn{
+    text-align: center;
+}
+
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent ;
+    border: 2px solid white;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#messagebtn button:hover{
+    background-color: #B73E3E;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+
+#comment{
+    margin-top: 10px ;
+}
+
+/* Contact End */
+
+
+/* Footer */
+#footer{
+    width: 100%;
+    background-color: #B73E3E;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 200px;
+}
+
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+
+#footer p{
+    color: white;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i{
+    background-color: white;
+    color: #6B011F;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.icon i:hover{
+    background-color: #6B011F;
+    color: white;
+}
+
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+
+.credite{
+    color: white;
+}
+
+.credite a{
+    color: #6B011F;
+    cursor: pointer;
+}
+/* Footer end */
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.arrow{
+    position: fixed;
+    background-color: #FFCACA;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+
+/* Banner BigCake */
+
+.banner2{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/Gambar/BG.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.banner2 .contentA{
+    flex: 1 1 400px;
+    margin-top: 60px;
+}
+
+.banner2 .contentA h3{
+    color:#6B011F;
+    font-weight: bold;
+}
+
+.banner2 .contentA h2{
+    font-size: 50px;
+    color: #6B011F;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.banner2 .contentA p{
+    color: #6B011F;
+}
+
+#btnorder1 button{
+    width: 200px;
+    height: 50px;
+    letter-spacing: 5px;
+    background-color: #6B011F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+    .banner2 .contentA h3{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:860px){
+    .banner2{
+        height: 150vh;
+    }
+}
+
+/* Banner End */
+
+
+
+/* Banner Slice */
+.banner3{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,1,0.9),rgba(0,0,1,0.2)), url(/Gambar/BGBG.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+
+.banner3 .contentB{
+    flex: 1 1 400px;
+    margin-top: 60px;
+}
+
+.banner3 .contentB h3{
+    color:#FFCACA;
+    font-weight: bold;
+}
+
+.banner3 .contentB h2{
+    font-size: 50px;
+    color: #FFCACA;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.banner3 .contentB p{
+    color: #FFCACA;
+}
+
+#btnorder button{
+    width: 150px;
+    height: 35px;
+    letter-spacing: 5px;
+    background-color: #FFCACA;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+    .banner3 .contentB h3{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:860px){
+    .banne3r{
+        height: 150vh;
+    }
+}
+
+/* Banner End */
+
+
+/* Banner */
+.banner4{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/Gambar/BGBGBG.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.banner4 .contentC{
+    flex: 1 1 400px;
+    margin-top: 60px;
+}
+
+.banner4 .contentC h3{
+    color:#F96666;
+    font-weight: bold;
+}
+
+.banner4 .contentC h2{
+    font-size: 50px;
+    color: #F96666;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.banner4 .contentC p{
+    color: #F96666;
+    text-shadow: 0px 0px 1px white;
+}
+
+#btnorder button{
+    width: 150px;
+    height: 35px;
+    letter-spacing: 5px;
+    background-color: #F96666;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+    .banner4 .contentC h3{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:860px){
+    .banner4{
+        height: 150vh;
+    }
+}
+
+/* Banner End */
+
+
+/* Banner Mini */
+.banner5{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)), url(/Gambar/BG11.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+
+.banner5 .contentD{
+    flex: 1 1 400px;
+    margin-top: 60px;
+}
+
+.banner5 .contentD h3{
+    color:#B73E3E;
+    font-weight: bold;
+}
+
+.banner5 .contentD h2{
+    font-size: 50px;
+    color: #B73E3E;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.banner5 .contentD p{
+    color: #F96666;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+#btnorder button{
+    width: 150px;
+    height: 35px;
+    letter-spacing: 5px;
+    background-color: #B73E3E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+    .banner5 .contentD h3{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:860px){
+    .banner5{
+        height: 150vh;
+    }
+}
+
+/* Banner End */
+
+
+
+/* Order Now */
+
+.now{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(Gambar/order.jpg);
+    background-size: cover;
+}
+
+
+#ordernow{
+    text-align: center;
+}
+
+#ordernow h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #F96666;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #F96666;
+}
+
+#ordernow h5{
+    font-weight: bolder;
+    margin: 30px;
+    color: #F96666;
+    text-shadow: 0px 0px 1px black;
+}
+
+#ordernow input{
+    background-color: #F96666;
+    color: white;
+}
+
+#ordernow input::placeholder{
+    color: white;
+}
+
+
+.form-group{
+    margin-top: 30px;
+}
+
+#orderbtn{
+    text-align: center;
+}
+
+#orderbtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent ;
+    border: 2px solid white;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#orderbtn button:hover{
+    background-color: #F96666;
+    color: #6B011F;
+}
+
+
+/* Order End */
